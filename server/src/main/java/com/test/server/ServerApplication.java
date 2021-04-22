@@ -1,14 +1,13 @@
-package com.test.physicianbuilderserver;
+package com.test.server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PhysicianbuilderserverApplication {
+public class ServerApplication {
 
 	public static void main(String[] args) {
-		System.out.print("app run");
-		SpringApplication.run(PhysicianbuilderserverApplication.class, args);
+		SpringApplication.run(ServerApplication.class, args);
 	}
 
 }
