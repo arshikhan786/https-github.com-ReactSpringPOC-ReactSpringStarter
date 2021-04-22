@@ -1,10 +1,10 @@
-package com.test.physicianbuilderserver;
+package com.test.server;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class PhysicianbuilderserverApplicationTests {
+class ServerApplicationTests {
 
 	@Test
 	void contextLoads() {
