@@ -7,11 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 
 public class PingPongController {
-	{
-		System.out.println("Ping Pong");
-		
-	}
-	
+
 	@GetMapping("/ping")
 	public String pingPong()
 	{
