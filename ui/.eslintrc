@@ -1,9 +1,9 @@
 {
   "env": {
-        "browser": true,
-        "node": true,
-        "jest": true
-  },
+    "browser": true,
+    "node": true,
+    "jest": true
+},
   "extends": [
     "airbnb",
     "plugin:jsx-a11y/recommended",
@@ -15,12 +15,20 @@
   ],
   "rules": {
     "semi": 0,
+    "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
     "prettier/prettier": [
       "error", {
         "semi": false,
+        "endOfLine":"auto",
         "singleQuote": true
       }
     ]
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "allowImportExportEverywhere": true
   }
 }
