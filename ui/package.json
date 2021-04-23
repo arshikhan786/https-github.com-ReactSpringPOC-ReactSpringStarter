@@ -4,6 +4,8 @@
   "private": true,
   "dependencies": {
     "@testing-library/user-event": "^12.1.10",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-react": "^7.23.2",
     "flow-bin": "^0.149.0",
     "flow-typed": "^3.3.1",
     "husky": "^6.0.0",
@@ -18,7 +20,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint . "
+    "lint": "eslint . ",
+    "lintfix": "eslint . --fix"
   },
   "eslintConfig": {
     "extends": [
@@ -42,6 +45,7 @@
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
     "@testing-library/react-hooks": "^5.1.1",
+    "eslint": "^7.24.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^8.2.0",
     "eslint-plugin-jsx-a11y": "^6.4.1",
