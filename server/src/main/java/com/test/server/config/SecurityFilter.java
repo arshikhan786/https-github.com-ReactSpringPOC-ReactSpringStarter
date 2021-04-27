@@ -10,13 +10,12 @@ import javax.servlet.ServletResponse;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.GenericFilterBean;
 
-
+@Component
 public class SecurityFilter extends GenericFilterBean {
 	
 	@Override
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 			throws IOException, ServletException {
-		System.out.println("filter class");
 		 chain.doFilter(request, response);
 	}
 
