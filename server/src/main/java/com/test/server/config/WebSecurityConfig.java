@@ -1,11 +1,8 @@
 package com.test.server.config;
 
-import javax.servlet.FilterChain;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
-
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.web.authentication.www.BasicAuthenticationFilter;
@@ -23,5 +20,11 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 			.antMatchers( "/ping","/login").permitAll().and()
 			.addFilterBefore(new SecurityFilter(),BasicAuthenticationFilter.class);
 	}
+	@Override
+    public void configure(WebSecurity web) throws Exception {
+        web
+            .ignoring()
+            .antMatchers("/h2-console/**","/h2/**");
+    }
 			
 }
