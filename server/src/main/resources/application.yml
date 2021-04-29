@@ -3,9 +3,6 @@ server:
     port: 8090
     
 spring:
-  config:
-    activate:
-      on-profile: default
   h2:
     console:
       enabled: true
