@@ -29,6 +29,7 @@ test {
 	useJUnitPlatform()
 }
 test.doFirst {
-        systemProperty 'spring.profiles.active', 'test'
-        activeProfiles = 'test'
-    }
+    systemProperty 'spring.profiles.active', 'test'
+    activeProfiles = 'test'
+}
+				
