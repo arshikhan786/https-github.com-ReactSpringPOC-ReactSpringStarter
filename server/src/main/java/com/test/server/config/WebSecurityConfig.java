@@ -20,11 +20,4 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 			.antMatchers( "/ping","/login").permitAll().and()
 			.addFilterBefore(new SecurityFilter(),BasicAuthenticationFilter.class);
 	}
-	@Override
-    public void configure(WebSecurity web) throws Exception {
-        web
-            .ignoring()
-            .antMatchers("/h2-console/**","/h2/**");
-    }
-			
 }

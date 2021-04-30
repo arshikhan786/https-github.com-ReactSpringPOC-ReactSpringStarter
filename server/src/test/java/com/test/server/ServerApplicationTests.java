@@ -17,7 +17,6 @@ class ServerApplicationTests {
 	@Test
 	void contextLoads() {
 		
-		System.out.println("Testingg");
 	}
 
 }
