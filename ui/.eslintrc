@@ -1,8 +1,8 @@
 {
   "env": {
-        "browser": true,
-        "node": true,
-        "jest": true
+    "browser": true,
+    "node": true,
+    "jest": true
   },
   "extends": [
     "airbnb",
@@ -15,11 +15,25 @@
   ],
   "rules": {
     "semi": 0,
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
     "prettier/prettier": [
-      "error", {
+      "error",
+      {
         "semi": false,
-        singleQuote: true
+        "singleQuote": true,
+        "endOfLine": "auto",
+        "quotes": [
+          1,
+          "single"
+        ]
       }
     ]
   }
