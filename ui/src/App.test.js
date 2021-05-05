@@ -1,6 +1,8 @@
 import { render, screen } from '@testing-library/react'
 import App from './App'
 
-test('renders learn react link', () => {
-  render(<App />)
+describe("user Slice test cases", () => {
+  test('should check the component render', () => {
+    render(<App />)
+  })
 })
