@@ -1,8 +1,14 @@
-import { render, screen } from '@testing-library/react'
+import { queries, render, screen } from '@testing-library/react'
 import App from './App'
 
-test('renders learn react link', () => {
-  render(<App />)
-  const linkElement = screen.getByText(/learn react/i)
-  expect(linkElement).toBeInTheDocument()
+describe("App js", () => {
+  beforeEach(() => {
+    render(<App />)
+  })
+  it('should check div element render',()=>
+  {
+    const val=screen.queryByTestId('helloReact')
+    expect(val).toHaveTextContent('Hello react')
+    
+  })
 })

@@ -3,7 +3,7 @@
     "browser": true,
     "node": true,
     "jest": true
-},
+  },
   "extends": [
     "airbnb",
     "plugin:jsx-a11y/recommended",
@@ -15,14 +15,25 @@
   ],
   "rules": {
     "semi": 0,
-    "react/react-in-jsx-scope": "off",
-    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
     "prettier/prettier": [
-      "error", {
+      "error",
+      {
         "semi": false,
-        "endOfLine":"auto",
-        "singleQuote": true
+        "singleQuote": true,
+        "endOfLine": "auto",
+        "quotes": [
+          1,
+          "single"
+        ]
       }
     ]
   },
