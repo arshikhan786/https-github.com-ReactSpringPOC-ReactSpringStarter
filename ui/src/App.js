@@ -3,11 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 function App() {
   return (
-    <Router>
-      <Switch>
-        
-      </Switch>
-    </Router>
+    <div data-testid="helloReact"><p>Hello react</p></div>
   )
 }
 export default App
