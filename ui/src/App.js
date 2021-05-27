@@ -1,10 +1,12 @@
-/* eslint-disable no-unused-vars */
 import React from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import './App.css'
+import PhysicianBuilder from './components/PhysicianBuilder'
 
 function App() {
   return (
-    <div data-testid="helloReact"><p>Hello react</p></div>
+    <div>
+      <PhysicianBuilder/>
+    </div>
   )
 }
 export default App
